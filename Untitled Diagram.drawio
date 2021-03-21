@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-21T20:18:45.501Z" agent="5.0 (Windows)" etag="9JR9AngCq8F3QSmsMa70" version="14.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-21T20:19:19.974Z" agent="5.0 (Windows)" etag="gRQVrzBdfUFjy7yUOvDt" version="14.4.9" type="github">
   <diagram id="8CQ5NkyPpufLnfAl6tkL" name="Page-1">
     <mxGraphModel dx="1038" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -9,6 +9,9 @@
         </mxCell>
         <mxCell id="lI8gRyEv4raRa2HbhwbV-2" value="Interfaz Restaurant" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="360" y="40" width="104" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lI8gRyEv4raRa2HbhwbV-4" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="490" y="40" width="20" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
