@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T20:57:04.253Z" agent="5.0 (Windows)" etag="zJJldUU71BfNNpa76gIv" version="14.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T20:58:51.115Z" agent="5.0 (Windows)" etag="U1LiHXhYUGb5lYc3kqBc" version="14.4.9" type="github">
   <diagram id="8CQ5NkyPpufLnfAl6tkL" name="Page-1">
     <mxGraphModel dx="1038" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -179,6 +179,9 @@
         </mxCell>
         <mxCell id="v9Ysa_6BB2aPhNIkPJDP-26" value="Lista de produccion: String[ ]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="357.5" y="645" width="162" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="v9Ysa_6BB2aPhNIkPJDP-27" value="Contador de preparacion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=1;" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="660" width="141.25" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
