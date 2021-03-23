@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T21:00:52.236Z" agent="5.0 (Windows)" etag="7yhKeOLe6__33VWLO_K2" version="14.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T21:01:11.616Z" agent="5.0 (Windows)" etag="H_NjtKC9YaMv0qyM4bq1" version="14.4.9" type="github">
   <diagram id="8CQ5NkyPpufLnfAl6tkL" name="Page-1">
     <mxGraphModel dx="716" dy="397" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -183,7 +183,7 @@
         <mxCell id="v9Ysa_6BB2aPhNIkPJDP-27" value="Contador de preparacion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="357.5" y="660" width="141.25" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="v9Ysa_6BB2aPhNIkPJDP-28" value="Sumar tiempo de preparacion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=1;" vertex="1" parent="1">
+        <mxCell id="v9Ysa_6BB2aPhNIkPJDP-28" value="Sumar tiempo de preparacion()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=1;" vertex="1" parent="1">
           <mxGeometry x="357.5" y="690" width="157.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="v9Ysa_6BB2aPhNIkPJDP-30" value="" style="endArrow=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="WkhMXPBb0I8seHbub5MP-1">
