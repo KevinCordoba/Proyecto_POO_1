@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-23T21:28:45.340Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="MXYVdjD5qH8cbYqTtGLa" version="14.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-23T21:32:45.469Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="RETy-7aA7TQHaXF6KdqS" version="14.5.0" type="github">
   <diagram id="8CQ5NkyPpufLnfAl6tkL" name="Page-1">
     <mxGraphModel dx="1038" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -38,7 +38,7 @@
           <mxGeometry x="765" y="160" width="50" height="25" as="geometry" />
         </mxCell>
         <mxCell id="BFutzFfHkOfu6mVOEawG-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="50" y="330" width="170" height="130" as="geometry" />
+          <mxGeometry x="50" y="330" width="170" height="170" as="geometry" />
         </mxCell>
         <mxCell id="v9Ysa_6BB2aPhNIkPJDP-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="lI8gRyEv4raRa2HbhwbV-12" target="lI8gRyEv4raRa2HbhwbV-5" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -151,7 +151,7 @@
           <mxGeometry x="711.5" y="250" width="135" height="20" as="geometry" />
         </mxCell>
         <mxCell id="29XVhmfyY2AZzdzBQijj-4" value="&amp;nbsp;Paciencia" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="70" y="400" width="50" height="20" as="geometry" />
+          <mxGeometry x="70" y="400" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="29XVhmfyY2AZzdzBQijj-6" value="Contador&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="60" y="200" width="85" height="20" as="geometry" />
@@ -193,7 +193,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_4a_b2VSPnzFSU9cg4HA-1" value="VerPaciencia()&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="430" width="100" height="20" as="geometry" />
+          <mxGeometry x="70" y="460" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_4a_b2VSPnzFSU9cg4HA-2" value="Impacitente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_4a_b2VSPnzFSU9cg4HA-3" value="Impacitente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="430" width="70" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
