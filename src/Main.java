@@ -5,6 +5,15 @@ public class Main {
 
     public static void main(String[] args) throws  Exception{
 	// pass
+    /*
+    Cliente clienteNormal;
+    clienteNormal = new Cliente();
+    System.out.println(clienteNormal.verPaciencia());
 
+    ClienteImpaciente clienteImpacientin;
+    clienteImpacientin = new ClienteImpaciente();
+    System.out.println(clienteImpacientin.verPaciencia());
+    */
+    
     }
 }
