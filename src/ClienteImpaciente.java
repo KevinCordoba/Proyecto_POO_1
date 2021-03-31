@@ -1,9 +1,9 @@
 public class ClienteImpaciente extends Cliente {
-    int contador;
-    int paciencia;
-    boolean impaciente;
+    public int contador;
+    public int paciencia;
+    public boolean impaciente;
 
-    ClienteImpaciente(){
+    public ClienteImpaciente(){
         contador = 0;
         paciencia = 10;
         impaciente = true;

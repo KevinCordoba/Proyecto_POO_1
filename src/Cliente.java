@@ -1,8 +1,8 @@
 public class Cliente {
-    int contador;
-    boolean impaciente;
+    public int contador;
+    public boolean impaciente;
 
-    Cliente(){
+    public Cliente(){
         contador = 0;
         impaciente = false;
     }
