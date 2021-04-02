@@ -8,7 +8,7 @@ import javax.swing.plaf.DimensionUIResource;
 import java.awt.GridLayout;
 import java.awt.event.*;
 
-public class Ventana_Main extends JFrame implements ActionListener {
+public class Ventana_Main extends JFrame{ //implements ActionListener {
 
     JLabel imagen;
     JLabel etiquetaImagen;

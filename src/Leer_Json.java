@@ -1,50 +1,28 @@
-import java.io.FileNotFoundException;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import com.google.gson.stream.JsonReader;
 import java.io.FileReader;
-import java.io.IOException;
-import java.util.Iterator;
+import java.lang.reflect.Type;
+import java.util.List;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
-public class Leer_Json {
-    public static void main(String[] args) {
+public class ReadingJSON {
+    @SuppressWarnings("unchecked")
+    //public static void main(String[] args) {
+        String ruta;
+        ruta = System.getProperty("user.dir") + System.getProperty("file.separator") + "src" + System.getProperty("file.separator");
+        String archivo;
+        archivo = "principal.json";
+        String ruta_completa = ruta + archivo;
 
-        JSONParser parser = new JSONParser();
-
-        try {
-
-            Object obj = parser.parse(new FileReader("prueba.json"));
-
-            JSONObject jsonObject = (JSONObject) obj;
-
-            String blog = (String) jsonObject.get("Blog");
-            System.out.println(blog);
-
-            String temas = (String) jsonObject.get("Temas");
-            System.out.println(temas);
-
-            long inicio = (Long) jsonObject.get("Inicio");
-            System.out.println(inicio);
-
-            JSONObject innerObject = (JSONObject) jsonObject.get("Posts");
-            System.out.println(innerObject.toJSONString());
-
-            // loop array
-            JSONArray tags = (JSONArray) jsonObject.get("Tags");
-            Iterator<String> iterator = tags.iterator();
-            while (iterator.hasNext()) {
-                System.out.println(iterator.next());
-            }
-
-        } catch (FileNotFoundException e) {
-            //manejo de error
-        } catch (IOException e) {
-            //manejo de error
-        } catch (ParseException e) {
-            //manejo de error
-        }
-
-    }
-
+        private static final Type REVIEW_TYPE = new TypeToken<List<Review>>() {
+        }.getType();
+        Gson gson = new Gson();
+        JsonReader reader = new JsonReader(new FileReader(ruta_completa));
+        List<Review> data = gson.fromJson(reader, REVIEW_TYPE);
+        data.toScreen();
+    //}
 }
