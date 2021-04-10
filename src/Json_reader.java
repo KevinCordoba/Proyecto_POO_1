@@ -4,7 +4,7 @@ import org.json.simple.parser.JSONParser;
 import java.io.FileReader;
 import java.util.Iterator;
 
-public class Leer_Json {
+public class Json_reader {
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         String ruta;
