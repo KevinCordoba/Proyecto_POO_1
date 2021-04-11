@@ -1,39 +1,62 @@
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import java.awt.BorderLayout;
+import javax.swing.*;
+import java.awt.*;
 import javax.swing.plaf.DimensionUIResource;
-import java.awt.GridLayout;
 import java.awt.event.*;
 
-public class Ventana_Main extends JFrame{ //implements ActionListener {
+public class Ventana_Main extends JFrame implements ActionListener{
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    JButton botonMostrar;
+    JButton addOrnamental;
+    JButton addHierba;
+    JButton addArbol;
 
-    JLabel imagen;
-    JLabel etiquetaImagen;
+    JPanel panelBoton;
 
-    JButton boton1;
-    JButton boton2;
+    JLabel etiquetaTexto;
+    JPanel panelTexto;
 
-    JPanel panelImagen;
-    JPanel panelBotones;
 
-    ImageIcon icon1;
-    ImageIcon icon2;
-
-    public Ventana_Main() {
-        this.setPreferredSize(new DimensionUIResource(500, 500)); //Resolucion
+    public Ventana_Main(){
+        super("Restaurante");
+        this.setPreferredSize(new DimensionUIResource(700, 500));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        this.pack();
+        
+        agregarComponentes();
+        
+        this.pack(); //trata de acomodar todo bien y es opcional
         this.setVisible(true);
     }
-    
-    private void configuraciones(){
-        panelImagen = new JPanel();
-        panelBotones = new JPanel();
 
-        //imagen_fondo = new ImageIcon()
+    private void agregarComponentes(){
+        panelBoton = new JPanel();
+        panelTexto = new JPanel();
+
+        etiquetaTexto = new JLabel("Bienvenido al Restaurante");
+        panelTexto.add(etiquetaTexto, BorderLayout.CENTER);
+
+        panelBoton.setLayout(new GridLayout(10,2));
+
+        botonMostrar = new JButton("Mostrar");
+        botonMostrar.addActionListener(this);
+        panelBoton.add(botonMostrar);
+
+        panelBoton.setLayout(new GridLayout(10,1));
+
+        this.add(panelBoton, BorderLayout.LINE_END);
+        this.add(panelTexto, BorderLayout.CENTER);
+
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+       
+        if(e.getSource().equals(botonMostrar)){
+            etiquetaTexto.setText("Hola");
+        }
+      
     }
 }
