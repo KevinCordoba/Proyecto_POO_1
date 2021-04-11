@@ -25,6 +25,12 @@ public class Ventana_Main extends JFrame implements ActionListener{
         this.setPreferredSize(new DimensionUIResource(700, 500));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+        Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
+        int height = pantalla.height;
+        int width = pantalla.width;
+        setSize(width/2, height/2);	
+        setLocationRelativeTo(null); // Hace que la ventana aparezca centrada
+
         agregarComponentes();
         
         this.pack(); //trata de acomodar todo bien y es opcional
@@ -40,7 +46,7 @@ public class Ventana_Main extends JFrame implements ActionListener{
 
         panelBoton.setLayout(new GridLayout(10,2));
 
-        botonMostrar = new JButton("Mostrar");
+        botonMostrar = new JButton("Siguiente");
         botonMostrar.addActionListener(this);
         panelBoton.add(botonMostrar);
 
