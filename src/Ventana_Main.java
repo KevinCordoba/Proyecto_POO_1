@@ -10,15 +10,15 @@ public class Ventana_Main extends JFrame implements ActionListener{
      */
     private static final long serialVersionUID = 1L;
     JButton botonMostrar;
-    JButton addOrnamental;
-    JButton addHierba;
-    JButton addArbol;
-
     JPanel panelBoton;
 
     JLabel etiquetaTexto;
     JPanel panelTexto;
+    JPanel panelTexto2;
+    JPanel panelTexto3;
 
+    JTextArea areaTexto;
+    JTextArea areaTexto2;  
 
     public Ventana_Main(){
         super("Restaurante");
@@ -40,6 +40,9 @@ public class Ventana_Main extends JFrame implements ActionListener{
     private void agregarComponentes(){
         panelBoton = new JPanel();
         panelTexto = new JPanel();
+        panelTexto2 = new JPanel();
+        panelTexto3 = new JPanel();
+
 
         etiquetaTexto = new JLabel("Bienvenido al Restaurante");
         panelTexto.add(etiquetaTexto, BorderLayout.CENTER);
@@ -52,8 +55,16 @@ public class Ventana_Main extends JFrame implements ActionListener{
 
         panelBoton.setLayout(new GridLayout(10,1));
 
+        areaTexto = new JTextArea(" Primer texto de prueba ");
+        panelTexto2.add(areaTexto, BorderLayout.SOUTH);
+
+        areaTexto2 = new JTextArea(" Segundo texto de prueba ");
+        panelTexto3.add(areaTexto2, BorderLayout.SOUTH);
+
         this.add(panelBoton, BorderLayout.LINE_END);
-        this.add(panelTexto, BorderLayout.CENTER);
+        this.add(panelTexto, BorderLayout.NORTH);
+        this.add(panelTexto2, BorderLayout.CENTER);
+        this.add(panelTexto3, BorderLayout.SOUTH);
 
     }
 
