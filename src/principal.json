@@ -1,18 +1,18 @@
 [
     {
-        "plato_fuerte": {
+        "platoFuerte": {
             "nombre": "hamburguesa",
             "precio": 1000,
-            "Duracion": 5,
-            "tamanno": "Entero"
+            "duracion": 5,
+            "tamaño": "Entero"
         }
     },
     {
         "plato_fuerte": {
             "nombre": "taco",
             "precio": 1000,
-            "Duracion": 3,
-            "tamanno": "Entero"
+            "duracion": 3,
+            "tamaño": "Entero"
         }
     }
 ]

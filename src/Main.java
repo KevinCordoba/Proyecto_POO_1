@@ -4,9 +4,12 @@
 public class Main {
 
     public static void main(String[] args) throws  Exception{
-        Ventana_Main ventan = new Ventana_Main();
-        //Leer_Json read = new Leer_Json();
-        System.out.println("Working Directory = " + System.getProperty("user.dir") + System.getProperty("file.separator") + "srs" + System.getProperty("file.separator") +"principal.json");
+        //Ventana_Main ventan = new Ventana_Main();
+        Reader nuevo = new Reader();
+        nuevo.leer_platos_fuertes();
+        nuevo.leer_acompa();
+        nuevo.leer_bebidas();
+
         
         // pass
     /*

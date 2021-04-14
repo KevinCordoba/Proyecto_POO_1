@@ -1,19 +1,19 @@
 {	
     "PlatoFuerte":[{
 	    "nombre" : "Hamburguesa",
-	    "precio" : "1500" ,
+	    "precio" : "1500",
 	    "duracion" : "5",
 	    "tamaño" : "entero"
 	  },
 
 	  { "nombre" : "ArrozConCamarones",
-	    "precio" : "3000" ,
+	    "precio" : "3000",
 	    "duracion" : "5",
 	    "tamaño" : "entero"
 	  },
 
 	  { "nombre" : "ArrozConPollo",
-	    "precio" : "2500" ,
+	    "precio" : "2500",
 	    "duracion" : "5",
 	    "tamaño" : "entero"
 	  },
@@ -41,14 +41,14 @@
 
 	  {
 		"nombre" : "PapasFritas",
-		"precio" : "2200" ,
+		"precio" : "2200",
 	    "duracion" : "5",
 		"tipo" : "salado"
 	  },
 
 	  {
 		"nombre" : "Pure",
-		"precio" : "1700" ,
+		"precio" : "1700",
 	    "duracion" : "5",
 		"tipo" : "dulce"
 	  }
@@ -65,7 +65,7 @@
 
 	  {
 		"nombre" : "Fanta",
-		"precio" : "1200" ,
+		"precio" : "1200",
 	    "duracion" : "5",
 		"tipo" : "frio",
 		"tamaño" : "250ml"	
@@ -73,7 +73,7 @@
 
 	  {
 		"nombre" : "cafe",
-		"precio" : "1000" ,
+		"precio" : "1000",
 	    "duracion" : "5",
 		"tipo" : "caliente",
 		"tamaño" : "250ml"	
@@ -81,7 +81,7 @@
 
 	  {
 		"nombre" : "Chocolate",
-		"precio" : "1500" ,
+		"precio" : "1500",
 	    "duracion" : "5",
 		"tipo" : "caliente",
 		"tamaño" : "330ml"	
