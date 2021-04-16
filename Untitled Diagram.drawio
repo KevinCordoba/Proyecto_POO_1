@@ -119,7 +119,7 @@
         <mxCell id="29XVhmfyY2AZzdzBQijj-17" value="Ordenes Completadas" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="160" y="590" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="v9Ysa_6BB2aPhNIkPJDP-17" value="&lt;div&gt;Ver combos()&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Verificar combo()&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=1;" parent="1" vertex="1">
+        <mxCell id="v9Ysa_6BB2aPhNIkPJDP-17" value="&lt;div&gt;Ver Combos()&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Verificar combo()&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=1;" parent="1" vertex="1">
           <mxGeometry x="555" y="600" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="29XVhmfyY2AZzdzBQijj-18" value="Ganancia" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">

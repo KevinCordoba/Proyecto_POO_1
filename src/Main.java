@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 //Clase restaurante
 // Se supone que debe controlar las demás clases aparte de manejar
 //Listas de clientes, productos random y lista de produccion
@@ -5,10 +8,23 @@ public class Main {
 
     public static void main(String[] args) throws  Exception{
         //Ventana_Main ventan = new Ventana_Main();
-        Reader nuevo = new Reader();
-        nuevo.leer_platos_fuertes();
-        nuevo.leer_acompa();
-        nuevo.leer_bebidas();
+        List<ArrayList<String>> probando = new ArrayList<ArrayList<String>>();
+        ArrayList<String> lista_temp = new ArrayList<String>();
+        ArrayList<String> lista_temp2 = new ArrayList<String>();
+
+        lista_temp.add("FileteDePescado");
+        lista_temp.add("delfinio");
+        lista_temp.add("moona");
+        probando.add(lista_temp);
+        lista_temp2.add("Patacones");
+        lista_temp2.add("delfinio");
+        lista_temp2.add("Inanis");
+        probando.add(lista_temp2);
+
+        System.out.println("Main\n" + probando + "\n-----------");
+
+        Combos combo = new Combos();
+        combo.comprobar_combo(probando);
 
         
         // pass
