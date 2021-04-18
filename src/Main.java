@@ -21,10 +21,14 @@ public class Main {
         lista_temp2.add("Inanis");
         probando.add(lista_temp2);
 
-        System.out.println("Main\n" + probando + "\n-----------");
+        //System.out.println("Main\n" + probando + "\n-----------");
+        //System.out.println("Funcion retorna:\n\n\n");
+        Reader leer = new Reader();
 
-        Combos combo = new Combos();
-        combo.comprobar_combo(probando);
+        }
+
+        //Combos combo = new Combos();
+        //combo.comprobar_combo(probando);
 
         
         // pass
@@ -39,4 +43,4 @@ public class Main {
     */
     
     }
-}
+

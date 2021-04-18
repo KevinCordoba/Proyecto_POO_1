@@ -9,7 +9,7 @@ public class ClienteImpaciente extends Cliente {
         impaciente = true;
     }
     
-   public boolean verPaciencia(){
-       return this.impaciente;
+   public int verPaciencia(){
+       return this.paciencia;
    }
 }

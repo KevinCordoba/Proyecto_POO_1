@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -16,9 +17,14 @@ public class Reader {
 
     }
 
+    List<ArrayList<String>> menu_fuerte = new ArrayList<ArrayList<String>>();
+    List<ArrayList<String>> menu_bebidas = new ArrayList<ArrayList<String>>();
+    List<ArrayList<String>> menu_sideD = new ArrayList<ArrayList<String>>();
+
+
     public void leer_platos_fuertes() {
         JSONParser parser = new JSONParser();
-        List<ArrayList<String>> menu_fuerte = new ArrayList<ArrayList<String>>();
+
         ArrayList<String> platoFuerte1 = new ArrayList<String>();
         ArrayList<String> platoFuerte2 = new ArrayList<String>();
         ArrayList<String> platoFuerte3 = new ArrayList<String>();
@@ -49,11 +55,11 @@ public class Reader {
                 String tamanoPlato = (String) PlatoFuerte.get("tamaño");
                 platoFuerte1.add(tamanoPlato);
 
-                System.out.println("\nLos Platos fuertes son: ");
+               /* System.out.println("\nLos Platos fuertes son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tamaño: " + tamanoPlato);
+                System.out.println("Tamaño: " + tamanoPlato); */
 
                 menu_fuerte.add(platoFuerte1);
 
@@ -73,11 +79,11 @@ public class Reader {
                 String tamanoPlato = (String) PlatoFuerte.get("tamaño");
                 platoFuerte2.add(tamanoPlato);
 
-                System.out.println("\nLos Platos fuertes son: ");
+                /*System.out.println("\nLos Platos fuertes son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tamaño: " + tamanoPlato);
+                System.out.println("Tamaño: " + tamanoPlato); */
 
                 menu_fuerte.add(platoFuerte2);
 
@@ -98,11 +104,11 @@ public class Reader {
                 String tamanoPlato = (String) PlatoFuerte.get("tamaño");
                 platoFuerte3.add(tamanoPlato);
 
-                System.out.println("\nLos Platos fuertes son: ");
+                /*System.out.println("\nLos Platos fuertes son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tamaño: " + tamanoPlato);
+                System.out.println("Tamaño: " + tamanoPlato);*/
 
                 menu_fuerte.add(platoFuerte3);
 
@@ -122,15 +128,15 @@ public class Reader {
                 String tamanoPlato = (String) PlatoFuerte.get("tamaño");
                 platoFuerte4.add(tamanoPlato);
 
-                System.out.println("\nLos Platos fuertes son: ");
+               /* System.out.println("\nLos Platos fuertes son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tamaño: " + tamanoPlato);
+                System.out.println("Tamaño: " + tamanoPlato); */
 
                 menu_fuerte.add(platoFuerte4);
-                System.out.println("\nARRAY: ");
-                System.out.println(menu_fuerte);
+                //System.out.println("\nARRAY: ");
+                //System.out.println(menu_fuerte);
             }
 
         } catch (FileNotFoundException e) {
@@ -143,8 +149,9 @@ public class Reader {
 
     }
 
+
     public void leer_acompa(){
-        List<ArrayList<String>> menu_sideD = new ArrayList<ArrayList<String>>();
+
         ArrayList<String> sideDish1 = new ArrayList<String>();
         ArrayList<String> sideDish2 = new ArrayList<String>();
         ArrayList<String> sideDish3 = new ArrayList<String>();
@@ -175,11 +182,11 @@ public class Reader {
                 String tipoPlato = (String) SideDish.get("tipo");
                 sideDish1.add(tipoPlato);
 
-                System.out.println("\nLos Acompannamientos son: ");
+               /* System.out.println("\nLos Acompannamientos son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tipo: " + tipoPlato);
+                System.out.println("Tipo: " + tipoPlato); */
 
                 menu_sideD.add(sideDish1);
             }
@@ -198,11 +205,11 @@ public class Reader {
                 String tipoPlato = (String) SideDish.get("tipo");
                 sideDish2.add(tipoPlato);
 
-                System.out.println("\nLos Acompannamientos son: ");
+                /*System.out.println("\nLos Acompannamientos son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tipo: " + tipoPlato);
+                System.out.println("Tipo: " + tipoPlato); */
 
                 menu_sideD.add(sideDish2);
             }
@@ -221,11 +228,11 @@ public class Reader {
                 String tipoPlato = (String) SideDish.get("tipo");
                 sideDish3.add(tipoPlato);
 
-                System.out.println("\nLos Acompannamientos son: ");
+                /*System.out.println("\nLos Acompannamientos son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tipo: " + tipoPlato);
+                System.out.println("Tipo: " + tipoPlato); */
 
                 menu_sideD.add(sideDish3);
             }
@@ -244,15 +251,15 @@ public class Reader {
                 String tipoPlato = (String) SideDish.get("tipo");
                 sideDish4.add(tipoPlato);
 
-                System.out.println("\nLos Acompannamientos son: ");
+                /*System.out.println("\nLos Acompannamientos son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tipo: " + tipoPlato);
+                System.out.println("Tipo: " + tipoPlato); */
 
                 menu_sideD.add(sideDish4);
-                System.out.println("\nARRAY: ");
-                System.out.println(menu_sideD);
+                //System.out.println("\nARRAY: ");
+                //System.out.println(menu_sideD);
             }
 
         } catch (FileNotFoundException e) {
@@ -264,8 +271,9 @@ public class Reader {
         }
     }
 
+
     public void leer_bebidas(){
-        List<ArrayList<String>> menu_bebidas = new ArrayList<ArrayList<String>>();
+
         ArrayList<String> bebidas1 = new ArrayList<String>();
         ArrayList<String> bebidas2 = new ArrayList<String>();
         ArrayList<String> bebidas3 = new ArrayList<String>();
@@ -296,11 +304,11 @@ public class Reader {
                 String tipoPlato = (String) Bebidas.get("tipo");
                 bebidas1.add(tipoPlato);
 
-                System.out.println("\nLos Acompannamientos son: ");
+               /* System.out.println("\nLos Acompannamientos son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tipo: " + tipoPlato);
+                System.out.println("Tipo: " + tipoPlato); */
 
                 menu_bebidas.add(bebidas1);
             }
@@ -319,11 +327,11 @@ public class Reader {
                 String tipoPlato = (String) Bebidas.get("tipo");
                 bebidas2.add(tipoPlato);
 
-                System.out.println("\nLos Acompannamientos son: ");
+               /* System.out.println("\nLos Acompannamientos son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tipo: " + tipoPlato);
+                System.out.println("Tipo: " + tipoPlato); */
 
                 menu_bebidas.add(bebidas2);
             }
@@ -342,11 +350,11 @@ public class Reader {
                 String tipoPlato = (String) Bebidas.get("tipo");
                 bebidas3.add(tipoPlato);
 
-                System.out.println("\nLos Acompannamientos son: ");
+              /*  System.out.println("\nLos Acompannamientos son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tipo: " + tipoPlato);
+                System.out.println("Tipo: " + tipoPlato); */
 
                 menu_bebidas.add(bebidas3);
             }
@@ -365,15 +373,15 @@ public class Reader {
                 String tipoPlato = (String) Bebidas.get("tipo");
                 bebidas4.add(tipoPlato);
 
-                System.out.println("\nLos Acompannamientos son: ");
+               /* System.out.println("\nLos Acompannamientos son: ");
                 System.out.println("Nombre del plato: " + nombrePlato);
                 System.out.println("Precio: " + precioPlato);
                 System.out.println("Duracion: " + duracionPlato);
-                System.out.println("Tipo: " + tipoPlato);
+                System.out.println("Tipo: " + tipoPlato); */
 
                 menu_bebidas.add(bebidas4);
-                System.out.println("\nARRAY: ");
-                System.out.println(menu_bebidas);
+                //System.out.println("\nARRAY: ");
+                //System.out.println(menu_bebidas);
             }
 
         } catch (FileNotFoundException e) {
@@ -383,6 +391,57 @@ public class Reader {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<ArrayList<String>> retornarPlato(){
+        return menu_fuerte;
+    }
+
+    public List<ArrayList<String>> retornarSideD (){
+        return menu_sideD;
+    }
+
+    public List<ArrayList<String>> retornarBebida(){
+        return menu_bebidas;
+    }
+
+    public ArrayList<String> indice_fuerte(){
+        Random r = new Random();
+        int indice = r.nextInt(5);
+        List<ArrayList<String>> menu_f = new ArrayList<ArrayList<String>>();
+        ArrayList<String> plato = new ArrayList<String>();
+
+        leer_platos_fuertes();
+        menu_f = retornarPlato();
+        plato = menu_f.get(indice);
+
+        return plato;
+    }
+
+    public ArrayList<String> indice_sideD(){
+        Random r = new Random();
+        int indice = r.nextInt(5);
+        List<ArrayList<String>> menu_f = new ArrayList<ArrayList<String>>();
+        ArrayList<String> plato = new ArrayList<String>();
+
+        leer_acompa();
+        menu_f = retornarPlato();
+        plato = menu_f.get(indice);
+
+        return plato;
+    }
+
+    public ArrayList<String> indice_bebida(){
+        Random r = new Random();
+        int indice = r.nextInt(5);
+        List<ArrayList<String>> menu_f = new ArrayList<ArrayList<String>>();
+        ArrayList<String> plato = new ArrayList<String>();
+
+        leer_bebidas();
+        menu_f = retornarPlato();
+        plato = menu_f.get(indice);
+
+        return plato;
     }
 
 }

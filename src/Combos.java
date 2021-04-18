@@ -13,7 +13,6 @@ import java.util.List;
 
 public class Combos {
     public String[][] lista_combos = {{"FileteDePescado","Patacones"}, {"ArrozConPollo", "Ensalada", "Coca"}, {"ArrozConCamarones", "Fanta"}};
-    public String[] prueba = {"Ensalada"};
     String por_mientras;
 
     ArrayList<String> lista_temp = new ArrayList<String>();
@@ -24,19 +23,35 @@ public class Combos {
         for (String[] i : lista_combos)
             System.out.println(i);
     }
-    //Primero hago lista de los nombre para comprobar los combos B)
-    //Debe de entrar el array que con los platos
+    //Primero hago lista de los nombres para comprobar los combos B)
+    //Debe de entrar el array de cada uno de los platos
     //Retornar BOOl para proceder a hacer descuento
-    public boolean comprobar_combo(List lista_menu) {
-        int contador = 0;
-        //Hacer recursion para meter en una lista los nombres
+    public boolean comprobar_combo(List lista_menu, List lista_sideD, List lista_bebidas) {
+
+        //Hacer recursion para meter en una lista los nombres de platos fuertes
         for (int i = 0; i < lista_menu.size(); i++){
-            lista_temp = (ArrayList<String>) lista_menu.get(contador);
+            lista_temp = (ArrayList<String>) lista_menu.get(i);
             por_mientras = lista_temp.get(0);
             definitiva.add(por_mientras);
-            contador += 1;
+
         }
+        //Lista de acompannamientos
+        for (int i = 0; i < lista_sideD.size(); i++){
+            lista_temp = (ArrayList<String>) lista_sideD.get(i);
+            por_mientras = lista_temp.get(0);
+            definitiva.add(por_mientras);
+
+        }
+        //Lista de bebidas
+        for (int i = 0; i < lista_bebidas.size(); i++){
+            lista_temp = (ArrayList<String>) lista_bebidas.get(i);
+            por_mientras = lista_temp.get(0);
+            definitiva.add(por_mientras);
+
+        }
+
         System.out.println("Lista de Nombres:\n" + definitiva);
+
         //A este punto ya tengo la lista de los nombres de los alimentos
         if (definitiva.contains("FileteDePescado") && definitiva.contains("Patacones")) {
             System.out.println("combo 1");
