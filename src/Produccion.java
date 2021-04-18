@@ -134,7 +134,7 @@ public class Produccion {
 
         for (int i = 0; i < lista_comidas.size(); i++) {
             lista_temp = (ArrayList<String>) lista_comidas.get(i);
-            por_mientras = lista_temp.get(0);
+            por_mientras = lista_temp.get(2);
             tiempo_de_produccion += Integer.parseInt(por_mientras);
             //definitiva.add(por_mientras);
         }
@@ -196,6 +196,23 @@ public class Produccion {
             System.out.println("Muy grande en:" + lista_temp);
         }
 
+    }
+
+    //esta funcion se debe de llamar 3 veces, para platoFuerte, SideD, bebidas
+    int precios = 0; //Declarar esto publico al principo para futuros usos
+    public void sumar_precios(List lista_comidas){
+        ArrayList<String> lista_temp = new ArrayList<String>();
+        String por_mientras;
+
+        for (int i = 0; i < lista_comidas.size(); i++) {
+            lista_temp = (ArrayList<String>) lista_comidas.get(i);
+            por_mientras = lista_temp.get(1);
+            precios += Integer.parseInt(por_mientras);
+
+        }
+    }
+    public int get_precios{
+        return precios;
     }
 
 
