@@ -21,6 +21,9 @@ public class Main {
         lista_temp2.add("Inanis");
         probando.add(lista_temp2);
 
+        ClienteImpaciente ramon = new ClienteImpaciente();
+        ramon.crear_orden();
+
         //System.out.println("Main\n" + probando + "\n-----------");
         //System.out.println("Funcion retorna:\n\n\n");
         Reader leer = new Reader();
