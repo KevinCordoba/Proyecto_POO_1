@@ -8,7 +8,8 @@ public class Main {
 
     public static void main(String[] args) throws  Exception{
         //Ventana_Main ventan = new Ventana_Main();
-        List<ArrayList<String>> probando = new ArrayList<ArrayList<String>>();
+
+        /*List<ArrayList<String>> probando = new ArrayList<ArrayList<String>>();
         ArrayList<String> lista_temp = new ArrayList<String>();
         ArrayList<String> lista_temp2 = new ArrayList<String>();
 
@@ -19,7 +20,7 @@ public class Main {
         lista_temp2.add("Patacones");
         lista_temp2.add("delfinio");
         lista_temp2.add("Inanis");
-        probando.add(lista_temp2);
+        probando.add(lista_temp2); */
 
         ClienteImpaciente ramon = new ClienteImpaciente();
         ramon.crear_orden();

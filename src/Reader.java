@@ -135,7 +135,7 @@ public class Reader {
                 System.out.println("Tamaño: " + tamanoPlato); */
 
                 menu_fuerte.add(platoFuerte4);
-                //System.out.println("\nARRAY: ");
+                //System.out.println("\nARRAY FUERTES: ");
                 //System.out.println(menu_fuerte);
             }
 
@@ -258,7 +258,7 @@ public class Reader {
                 System.out.println("Tipo: " + tipoPlato); */
 
                 menu_sideD.add(sideDish4);
-                //System.out.println("\nARRAY: ");
+                //System.out.println("\nARRAY sideDishes: ");
                 //System.out.println(menu_sideD);
             }
 
@@ -380,7 +380,7 @@ public class Reader {
                 System.out.println("Tipo: " + tipoPlato); */
 
                 menu_bebidas.add(bebidas4);
-                //System.out.println("\nARRAY: ");
+                //System.out.println("\nARRAY Bebidas: ");
                 //System.out.println(menu_bebidas);
             }
 
@@ -407,11 +407,11 @@ public class Reader {
 
     public ArrayList<String> indice_fuerte(){
         Random r = new Random();
-        int indice = r.nextInt(5);
+        int indice = r.nextInt(4);
         List<ArrayList<String>> menu_f = new ArrayList<ArrayList<String>>();
         ArrayList<String> plato = new ArrayList<String>();
 
-        leer_platos_fuertes();
+        this.leer_platos_fuertes();
         menu_f = retornarPlato();
         plato = menu_f.get(indice);
 
@@ -420,28 +420,29 @@ public class Reader {
 
     public ArrayList<String> indice_sideD(){
         Random r = new Random();
-        int indice = r.nextInt(5);
-        List<ArrayList<String>> menu_f = new ArrayList<ArrayList<String>>();
-        ArrayList<String> plato = new ArrayList<String>();
+        int indice = r.nextInt(4);
+        List<ArrayList<String>> menu_SD = new ArrayList<ArrayList<String>>();
+        ArrayList<String> side = new ArrayList<String>();
 
-        leer_acompa();
-        menu_f = retornarPlato();
-        plato = menu_f.get(indice);
+        this.leer_acompa();
+        menu_SD = retornarSideD();
+        side = menu_SD.get(indice);
 
-        return plato;
+        return side;
     }
 
     public ArrayList<String> indice_bebida(){
         Random r = new Random();
-        int indice = r.nextInt(5);
-        List<ArrayList<String>> menu_f = new ArrayList<ArrayList<String>>();
-        ArrayList<String> plato = new ArrayList<String>();
+        int indice = r.nextInt(4);
+        List<ArrayList<String>> menu_B = new ArrayList<ArrayList<String>>();
+        ArrayList<String> bebi = new ArrayList<String>();
 
-        leer_bebidas();
-        menu_f = retornarPlato();
-        plato = menu_f.get(indice);
+        this.leer_bebidas();
+        menu_B = retornarBebida();
+        bebi = menu_B.get(indice);
+        //System.out.println(menu_B);
 
-        return plato;
+        return bebi;
     }
 
 }

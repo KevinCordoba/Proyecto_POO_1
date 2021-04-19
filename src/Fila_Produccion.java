@@ -68,5 +68,8 @@ public class Fila_Produccion {
         }
     }
 
+    public void setPausa(boolean valor){
+        pausa = valor;
+    }
 
 }
