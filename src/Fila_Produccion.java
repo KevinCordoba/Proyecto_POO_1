@@ -23,6 +23,7 @@ public class Fila_Produccion {
                         break;
                     }
                     lista_temp.remove(i); //Remueve el que ya verifico
+                    //System.out.println("Buenas tardes" + lista_temp); //////
                 }
                 if (tamanno_pedido <= tamanno_cola) {
                     System.out.println("Tamanno pedido1 > 10");

@@ -31,7 +31,7 @@ public class Cliente extends Reader{
     public void crear_orden(){
         Random r = new Random();
         int numero_random;
-        numero_random = r.nextInt(4);
+        numero_random = r.nextInt((3-1)+1)+1;
         System.out.println("numero Random para platos Fuertes" + numero_random);
         while (numero_random != 0){
             if (numero_random == 3){
@@ -61,7 +61,7 @@ public class Cliente extends Reader{
 
                 numero_random = 0;
             }
-            else{
+            else if(numero_random == 0) {
                 platoFuerte1 = indice_fuerte();
 
                 pedido_Fuerte.add(platoFuerte1);
@@ -69,7 +69,7 @@ public class Cliente extends Reader{
                 numero_random = 0;
             }
         }
-        numero_random = r.nextInt(4);
+        numero_random = r.nextInt((3-1)+1)+1;
         System.out.println("numero Random para acompannamientos" + numero_random);
         while (numero_random != 0) {
             if (numero_random == 3) {
@@ -107,7 +107,7 @@ public class Cliente extends Reader{
                 numero_random = 0;
             }
         }
-        numero_random = r.nextInt(4);
+        numero_random = r.nextInt((3-1)+1)+1;
         System.out.println("numero Random para bebidas" + numero_random);
         while (numero_random != 0) {
             if (numero_random == 3) {

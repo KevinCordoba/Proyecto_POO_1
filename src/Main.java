@@ -22,12 +22,24 @@ public class Main {
         lista_temp2.add("Inanis");
         probando.add(lista_temp2); */
 
-        ClienteImpaciente ramon = new ClienteImpaciente();
+        
+        Cliente ramon = new Cliente();
         ramon.crear_orden();
+        System.out.println("ver_platosFuertes Ramon:" + ramon.ver_platosFuertes());
+        System.out.println("ver_sideD Ramon:" + ramon.ver_SideD());
+        System.out.println("ver_bebidas Ramon:" + ramon.ver_bebidas());
+
+        
+        //Fila_Produccion fila = new Fila_Produccion(); 
+        //fila.sumar_tamanno_perro(ramon.ver_platosFuertes(), ramon.ver_SideD(), ramon.ver_bebidas());
+        //System.out.println(ramon.ver_platosFuertes());
+
+       // Produccion prod = new Produccion();
+        //prod.probarFila_Prod();
 
         //System.out.println("Main\n" + probando + "\n-----------");
         //System.out.println("Funcion retorna:\n\n\n");
-        Reader leer = new Reader();
+        //Reader leer = new Reader();
 
         }
 

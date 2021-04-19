@@ -8,7 +8,7 @@ public class Produccion extends Fila_Produccion{
     ClienteImpaciente persona3 = new ClienteImpaciente();
     List<Cliente> listaPersonas = new ArrayList<Cliente>();
 
-    Reader readerPrueba = new Reader();
+    //Reader readerPrueba = new Reader();
     
     
     List<String> listaProduccion = new ArrayList<String>();
@@ -30,27 +30,11 @@ public class Produccion extends Fila_Produccion{
         //listaProduccion.add(listaPersonas)
     }
 
-    /*public int sumaTimePrep(){
-        Cliente Ctemporal = new Cliente();
-        List<String> listClTmp = new ArrayList<String>();
-        Ctemporal = listaPersonas.get(0);
-        listClTmp = Ctemporal.listaDelCliente;
-        for(int i = 0; i < Ctemporal.listaDelCliente.size(); i++){
-            if(listClTmp.get(i).equals("Hamburguesa") || listClTmp.get(i).equals("ArrozConCamarones") || listClTmp.get(i).equals("ArrozConPollo") || listClTmp.get(i).equals("FileteDePescado") ){
-                contPrep = contPrep + 3;
-            }
-            if(listClTmp.get(i).equals("Ensalada") || listClTmp.get(i).equals("Patacones") || listClTmp.get(i).equals("PapasFritas") || listClTmp.get(i).equals("Pure") ){
-                contPrep = contPrep + 2;
-            }
-            if(listClTmp.get(i).equals("Coca") || listClTmp.get(i).equals("Fanta") || listClTmp.get(i).equals("cafe") || listClTmp.get(i).equals("Chocolate") ){
-                contPrep = contPrep + 1;
-            }
-        }
-        System.out.println(Ctemporal.listaDelCliente);
-        System.out.println(contPrep);
-        return contPrep;
-    } */
-
+    public void probarFila_Prod(){
+        persona1.crear_orden();
+        sumar_tamanno_perro(persona1.ver_platosFuertes(), persona1.ver_SideD(), persona1.ver_platosFuertes());
+        //System.out.println(tamanno_pedido);
+    }
 
     //esta funcion se debe de llamar 3 veces, para platoFuerte, SideD, bebidas
     int tiempo_de_produccion = 0; //Declarar esto publico al principo para futuros usos
