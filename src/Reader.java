@@ -1,3 +1,4 @@
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,14 +14,13 @@ import org.json.simple.parser.ParseException;
 public class Reader {
     //public static void main(String[] args) throws Exception {
     public Reader() {
-        System.out.println("Reader Activo");
+        //System.out.println("Reader Activo");
 
     }
 
     List<ArrayList<String>> menu_fuerte = new ArrayList<ArrayList<String>>();
     List<ArrayList<String>> menu_bebidas = new ArrayList<ArrayList<String>>();
     List<ArrayList<String>> menu_sideD = new ArrayList<ArrayList<String>>();
-
 
     public void leer_platos_fuertes() {
         JSONParser parser = new JSONParser();
@@ -403,46 +403,6 @@ public class Reader {
 
     public List<ArrayList<String>> retornarBebida(){
         return menu_bebidas;
-    }
-
-    public ArrayList<String> indice_fuerte(){
-        Random r = new Random();
-        int indice = r.nextInt(4);
-        List<ArrayList<String>> menu_f = new ArrayList<ArrayList<String>>();
-        ArrayList<String> plato = new ArrayList<String>();
-
-        this.leer_platos_fuertes();
-        menu_f = retornarPlato();
-        plato = menu_f.get(indice);
-
-        return plato;
-    }
-
-    public ArrayList<String> indice_sideD(){
-        Random r = new Random();
-        int indice = r.nextInt(4);
-        List<ArrayList<String>> menu_SD = new ArrayList<ArrayList<String>>();
-        ArrayList<String> side = new ArrayList<String>();
-
-        this.leer_acompa();
-        menu_SD = retornarSideD();
-        side = menu_SD.get(indice);
-
-        return side;
-    }
-
-    public ArrayList<String> indice_bebida(){
-        Random r = new Random();
-        int indice = r.nextInt(4);
-        List<ArrayList<String>> menu_B = new ArrayList<ArrayList<String>>();
-        ArrayList<String> bebi = new ArrayList<String>();
-
-        this.leer_bebidas();
-        menu_B = retornarBebida();
-        bebi = menu_B.get(indice);
-        //System.out.println(menu_B);
-
-        return bebi;
     }
 
 }

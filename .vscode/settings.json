@@ -3,5 +3,8 @@
         "lib/**/*.jar",
         "c:\\Users\\kevin\\Desktop\\Aplicaciones\\JSON\\json-simple-1.1.1.jar",
         "c:\\Users\\kevin\\Desktop\\gson-2.8.2.jar"
+    ],
+    "java.project.sourcePaths": [
+        "src"
     ]
 }

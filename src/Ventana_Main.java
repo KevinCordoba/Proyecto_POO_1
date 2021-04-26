@@ -5,6 +5,7 @@ import javax.swing.plaf.DimensionUIResource;
 import java.awt.event.*;
 
 public class Ventana_Main extends JFrame implements ActionListener{
+    private boolean ciclo = true;
     /**
      *
      */
@@ -18,7 +19,13 @@ public class Ventana_Main extends JFrame implements ActionListener{
     JPanel panelTexto3;
 
     JTextArea areaTexto;
-    JTextArea areaTexto2;  
+    JTextArea areaTexto2;
+    
+    Fila_Produccion filaProbarBoton = new Fila_Produccion();
+    Cliente ramon = new Cliente();
+    boolean condicionBoton;
+
+    int contando = 0;
 
     public Ventana_Main(){
         super("Restaurante");
@@ -68,12 +75,29 @@ public class Ventana_Main extends JFrame implements ActionListener{
 
     }
 
+    public void cambiar_ciclo(boolean valor){
+        this.ciclo = valor;
+    }
+    public boolean get_ciclo(){
+        return ciclo;
+    }
+
+    public void procesandoPrueba(){
+        //contando;
+        System.out.println(contando + "contando valor");
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
-       
+        
         if(e.getSource().equals(botonMostrar)){
-            etiquetaTexto.setText("Hola");
+            //etiquetaTexto.setText("Hola");
+            cambiar_ciclo(false);
+            //this.contando++;
+            contando++;
+            areaTexto.setText(" estado del ciclo " + ciclo + " \nnum clicks: " + contando);
         }
-      
+        cambiar_ciclo(true);
+        areaTexto2.setText("ciclo real: " + ciclo + " \ncontando esta en: " + contando);
     }
 }

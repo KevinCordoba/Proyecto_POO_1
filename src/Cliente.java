@@ -22,6 +22,10 @@ public class Cliente extends Reader{
     public ArrayList<String> bebida2 = new ArrayList<String>();
     public ArrayList<String> bebida3 = new ArrayList<String>();
 
+    PlatosFuertes platosFs = new PlatosFuertes();
+    Acompanamientos acompans = new Acompanamientos();
+    Bebidas bebs = new Bebidas();
+
     public Cliente(){
         contador = 0;
         impaciente = false;
@@ -35,9 +39,9 @@ public class Cliente extends Reader{
         System.out.println("numero Random para platos Fuertes" + numero_random);
         while (numero_random != 0){
             if (numero_random == 3){
-                platoFuerte1 = indice_fuerte();
-                platoFuerte2 = indice_fuerte();
-                platoFuerte3 = indice_fuerte();
+                platoFuerte1 = platosFs.indice_fuerte();
+                platoFuerte2 = platosFs.indice_fuerte();
+                platoFuerte3 = platosFs.indice_fuerte();
 
                 pedido_Fuerte.add(platoFuerte1);
                 pedido_Fuerte.add(platoFuerte2);
@@ -46,8 +50,8 @@ public class Cliente extends Reader{
                 numero_random = 0;
             }
             else if (numero_random == 2){
-                platoFuerte1 = indice_fuerte();
-                platoFuerte2 = indice_fuerte();
+                platoFuerte1 = platosFs.indice_fuerte();
+                platoFuerte2 = platosFs.indice_fuerte();
 
                 pedido_Fuerte.add(platoFuerte1);
                 pedido_Fuerte.add(platoFuerte2);
@@ -55,14 +59,14 @@ public class Cliente extends Reader{
                 numero_random = 0;
             }
             else if (numero_random == 1){
-                platoFuerte1 = indice_fuerte();
+                platoFuerte1 = platosFs.indice_fuerte();
 
                 pedido_Fuerte.add(platoFuerte1);
 
                 numero_random = 0;
             }
             else if(numero_random == 0) {
-                platoFuerte1 = indice_fuerte();
+                platoFuerte1 = platosFs.indice_fuerte();
 
                 pedido_Fuerte.add(platoFuerte1);
 
@@ -73,9 +77,9 @@ public class Cliente extends Reader{
         System.out.println("numero Random para acompannamientos" + numero_random);
         while (numero_random != 0) {
             if (numero_random == 3) {
-                sideD1 = indice_sideD();
-                sideD2 = indice_sideD();
-                sideD3 = indice_sideD();
+                sideD1 = acompans.indice_sideD();
+                sideD2 = acompans.indice_sideD();
+                sideD3 = acompans.indice_sideD();
 
                 pedido_SideD.add(sideD1);
                 pedido_SideD.add(sideD2);
@@ -84,8 +88,8 @@ public class Cliente extends Reader{
                 numero_random = 0;
 
             } else if (numero_random == 2) {
-                sideD1 = indice_sideD();
-                sideD2 = indice_sideD();
+                sideD1 = acompans.indice_sideD();
+                sideD2 = acompans.indice_sideD();
 
                 pedido_SideD.add(sideD1);
                 pedido_SideD.add(sideD2);
@@ -93,14 +97,14 @@ public class Cliente extends Reader{
                 numero_random = 0;
 
             } else if (numero_random == 1) {
-                sideD1 = indice_sideD();
+                sideD1 = acompans.indice_sideD();
 
                 pedido_SideD.add(sideD1);
 
                 numero_random = 0;
 
             } else {
-                sideD1 = indice_sideD();
+                sideD1 = acompans.indice_sideD();
 
                 pedido_SideD.add(sideD1);
 
@@ -111,9 +115,9 @@ public class Cliente extends Reader{
         System.out.println("numero Random para bebidas" + numero_random);
         while (numero_random != 0) {
             if (numero_random == 3) {
-                bebida1 = indice_bebida();
-                bebida2 = indice_bebida();
-                bebida3 = indice_bebida();
+                bebida1 = bebs.indice_bebida();
+                bebida2 = bebs.indice_bebida();
+                bebida3 = bebs.indice_bebida();
 
                 pedido_bebidas.add(bebida1);
                 pedido_bebidas.add(bebida2);
@@ -122,8 +126,8 @@ public class Cliente extends Reader{
                 numero_random = 0;
 
             } else if (numero_random == 2) {
-                bebida1 = indice_bebida();
-                bebida2 = indice_bebida();
+                bebida1 = bebs.indice_bebida();
+                bebida2 = bebs.indice_bebida();
 
                 pedido_bebidas.add(bebida1);
                 pedido_bebidas.add(bebida2);
@@ -131,14 +135,14 @@ public class Cliente extends Reader{
                 numero_random = 0;
 
             } else if (numero_random == 1) {
-                bebida1 = indice_bebida();
+                bebida1 = bebs.indice_bebida();
 
                 pedido_bebidas.add(bebida1);
 
                 numero_random = 0;
 
             } else {
-                bebida1 = indice_bebida();
+                bebida1 = bebs.indice_bebida();
 
                 pedido_bebidas.add(bebida1);
 
