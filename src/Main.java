@@ -24,6 +24,7 @@ public class Main {
                 System.out.println("Produccion terminada");
             }
             else{
+                produccion.producir_2();
                 System.out.println("no se ha vaciado la lista");
             }
         }
