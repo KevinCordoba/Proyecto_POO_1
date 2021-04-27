@@ -15,11 +15,15 @@ public class Main {
         //Este while debe de estar dentro de otro while que sea
         //de que while lista de clientes != 0:
         int perroCasa = 5;
+        produccion.getFilaClientes();
         while (perroCasa != 0) { //Perro casa es un loop temporal solo para pruebas
             System.out.println("SI ENTRA A perroCasa");
-            produccion.getFilaClientes();
+            //produccion.getFilaClientes();
             System.out.println("pASO");
             produccion.ProducirPedido();
+            if (!ventana.get_ciclo()){
+                produccion.ciclos = ventana.get_ciclo();
+            }
             if (produccion.lista_por_producir.get(0) == null ){
                 System.out.println("Produccion terminada");
             }

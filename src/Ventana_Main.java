@@ -96,10 +96,11 @@ public class Ventana_Main extends JFrame implements ActionListener{
             cambiar_ciclo(false);
             //this.contando++;
             contando++;
+            this.ciclo = false;
             areaTexto.setText(" estado del ciclo " + ciclo + " \nnum clicks: " + contando);
 
         }
-        /*cambiar_ciclo(true);
-        areaTexto2.setText("ciclo real: " + ciclo + " \ncontando esta en: " + contando);*/
+        cambiar_ciclo(true);
+        /*areaTexto2.setText("ciclo real: " + ciclo + " \ncontando esta en: " + contando);*/
     }
 }
