@@ -91,13 +91,15 @@ public class Ventana_Main extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         
         if(e.getSource().equals(botonMostrar)){
+            //Debe cambiar el ciclo a False para que haga la produccion
             //etiquetaTexto.setText("Hola");
             cambiar_ciclo(false);
             //this.contando++;
             contando++;
             areaTexto.setText(" estado del ciclo " + ciclo + " \nnum clicks: " + contando);
+
         }
-        cambiar_ciclo(true);
-        areaTexto2.setText("ciclo real: " + ciclo + " \ncontando esta en: " + contando);
+        /*cambiar_ciclo(true);
+        areaTexto2.setText("ciclo real: " + ciclo + " \ncontando esta en: " + contando);*/
     }
 }

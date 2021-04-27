@@ -145,6 +145,7 @@ public class Fila_Produccion {
             clicks = Integer.parseInt(por_mientras); //Declaro el numero de clicks
             while (clicks != 0) { //va a estar enciclado por mientras
                 while (!ciclos) {
+                    System.out.println("Esta en el loop");
                     restarClicks();
                     setCiclos(true);
                 }
@@ -156,6 +157,15 @@ public class Fila_Produccion {
         setPausa(false);
         System.out.println("pausa: " + pausa);
         System.out.println("Lista por producir: " + lista_por_producir);
+    }
+
+    public void producir_2(){
+        if (getClicks() == 0){
+            setClicks();
+        }
+        System.out.println("Un click menos");
+        restarClicks();
+
     }
 
     //---------------------------------------------------------------------
@@ -176,8 +186,14 @@ public class Fila_Produccion {
         this.clicks -= 1;
     }
 
-    public void setClicks(int clicks) {
-        this.clicks = clicks;
+    public void setClicks() {
+        bodega = lista_por_producir.get(0);
+        por_mientras = bodega.get(2);
+        this.clicks = Integer.parseInt(por_mientras); //setear clicks
+        lista_por_producir.remove(0);
+    }
+    public int getClicks(){
+        return this.clicks;
     }
 
 }
