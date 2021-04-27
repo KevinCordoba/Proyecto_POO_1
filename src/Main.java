@@ -15,24 +15,16 @@ public class Main {
         //Este while debe de estar dentro de otro while que sea
         //de que while lista de clientes != 0:
         int perroCasa = 5;
-        while (perroCasa != 0) {
+        while (perroCasa != 0) { //Perro casa es un loop temporal solo para pruebas
             System.out.println("SI ENTRA A perroCasa");
             produccion.getFilaClientes();
             System.out.println("pASO");
             produccion.ProducirPedido();
-            if (ventana.get_ciclo() == false){
-                System.out.println("entra al if");
+            if (produccion.lista_por_producir.get(0) == null ){
+                System.out.println("Produccion terminada");
             }
-            perroCasa --;
-
-            while (ventana.get_ciclo() == false) {
-                System.out.println("SI ENTRA A EL WHILE");
-                produccion.getFilaClientes();
-                System.out.println("pASO");
-                produccion.ProducirPedido();
-                System.out.println("Entradas: " + perroCasa);
-                perroCasa --;
-                ventana.cambiar_ciclo(true);
+            else{
+                System.out.println("no se ha vaciado la lista");
             }
         }
     }
