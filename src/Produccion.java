@@ -37,6 +37,9 @@ public class Produccion extends Fila_Produccion{
         }
         System.out.println(listaPersonas);
     }
+    public List verListaPersonas(){
+        return listaPersonas;
+    }
 
     public void ProducirPedido(){
         /*while (!listaPersonas.isEmpty()){

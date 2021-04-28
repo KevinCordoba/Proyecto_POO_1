@@ -54,7 +54,7 @@ public class Fila_Produccion {
                     break;
                 }
                 else if(pausa){
-                    producir();
+                    producir_2();
                     System.out.println("pausa++: " + pausa);
                 }
                 System.out.println("Se hizo los fuertes");
@@ -93,7 +93,7 @@ public class Fila_Produccion {
                     break;
                 }
                 else if(pausa){
-                    producir();
+                    producir_2();
                 }
                 System.out.println("Se hizo los Acompannamientos");
                 //------------------------------------------------------------
@@ -133,7 +133,7 @@ public class Fila_Produccion {
                 System.out.println(tamanno_pedido);
                 setPausa(true);
                 System.out.println("pausa: " + pausa);
-                producir();
+                producir_2();
             //} llave de la pausa
         }
     }

@@ -16,20 +16,14 @@ public class Main {
         //de que while lista de clientes != 0:
         int perroCasa = 5;
         produccion.getFilaClientes();
-        while (perroCasa != 0) { //Perro casa es un loop temporal solo para pruebas
-            System.out.println("SI ENTRA A perroCasa");
-            //produccion.getFilaClientes();
-            System.out.println("pASO");
-            produccion.ProducirPedido();
-            if (!ventana.get_ciclo()){
-                produccion.ciclos = ventana.get_ciclo();
-            }
-            if (produccion.lista_por_producir.get(0) == null ){
-                System.out.println("Produccion terminada");
-            }
-            else{
-                produccion.producir_2();
-                System.out.println("no se ha vaciado la lista");
+        while (produccion.verListaPersonas().get(0) == null){
+            if (!ventana.get_ciclo()){ //if boton es false
+                if (produccion.lista_por_producir.get(0) == null) {
+                    System.out.println("Produccion terminada");
+                } else {
+                    produccion.producir_2();
+                    System.out.println("no se ha vaciado la lista");
+                }
             }
         }
     }
