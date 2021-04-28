@@ -32,13 +32,17 @@ public class Produccion extends Fila_Produccion{
         listaPersonas.add(persona1);
         listaPersonas.add(persona2);
         listaPersonas.add(persona3);
+        listaPersonas.add(persona4);
+        listaPersonas.add(persona5);
+        listaPersonas.add(persona6);
+        listaPersonas.add(persona7);
+        listaPersonas.add(persona8);
+        listaPersonas.add(persona9);
+        listaPersonas.add(persona10);
         for(int i = 0; i<listaPersonas.size(); i++){
             listaPersonas.get(i).crear_orden();
         }
-        System.out.println(listaPersonas);
-    }
-    public List verListaPersonas(){
-        return listaPersonas;
+        //System.out.println(listaPersonas);
     }
 
     public void ProducirPedido(){
@@ -60,21 +64,58 @@ public class Produccion extends Fila_Produccion{
     }
 
     //esta funcion se debe de llamar 3 veces, para platoFuerte, SideD, bebidas
-    int tiempo_de_produccion = 0; //Declarar esto publico al principo para futuros usos
-    public void get_tiempo_cliente(List lista_comidas){
-        ArrayList<String> lista_temp = new ArrayList<String>();
-        ArrayList<String> definitiva = new ArrayList<String>();
-        String por_mientras;
+    int tempo_Fuerte = 0; 
+    int precioTotalPedido = 0;
+    int tempo_SD = 0;
+    int tempo_Bb = 0;
+    int tempoCompleto = 0;
+    ArrayList<String> nombres = new ArrayList<String>();
+    public void get_tiempoForte(){
+        nombres = new ArrayList<String>();
+        tempoCompleto = 0;
+        tempo_Fuerte = 0;
+        tempo_SD = 0;
+        tempo_Bb = 0;
+        for (int i=0; i<listaPersonas.get(0).pedido_Fuerte.size(); i++){
+            precioTotalPedido += Integer.parseInt( listaPersonas.get(0).pedido_Fuerte.get(i).get(1) );
+            tempo_Fuerte += Integer.parseInt( listaPersonas.get(0).pedido_Fuerte.get(i).get(2) );
+            nombres.add( listaPersonas.get(0).pedido_Fuerte.get(i).get(0) );
+            //System.out.println("El precio es: " + precioTotalPedido + "  El tiempo es: " + tempo_Fuerte);
 
-        for (int i = 0; i < lista_comidas.size(); i++) {
-            lista_temp = (ArrayList<String>) lista_comidas.get(i);
-            por_mientras = lista_temp.get(2);
-            tiempo_de_produccion += Integer.parseInt(por_mientras);
-            //definitiva.add(por_mientras);
         }
+
+        for (int i=0; i<listaPersonas.get(0).pedido_SideD.size(); i++){
+            precioTotalPedido += Integer.parseInt( listaPersonas.get(0).pedido_SideD.get(i).get(1) );
+            tempo_SD += Integer.parseInt( listaPersonas.get(0).pedido_SideD.get(i).get(2) );
+            nombres.add( listaPersonas.get(0).pedido_SideD.get(i).get(0) );
+            //System.out.println("El precio es: " + precioTotalPedido + "  El tiempo es: " + tempo_SD);
+        }
+
+        for (int i=0; i<listaPersonas.get(0).pedido_bebidas.size(); i++){
+            precioTotalPedido += Integer.parseInt( listaPersonas.get(0).pedido_bebidas.get(i).get(1) );
+            tempo_Bb += Integer.parseInt( listaPersonas.get(0).pedido_bebidas.get(i).get(2) );
+            nombres.add( listaPersonas.get(0).pedido_bebidas.get(i).get(0) );
+            //System.out.println("El precio es: " + precioTotalPedido + "  El tiempo total es: " + tempo_Bb );
+        }
+        tempoCompleto = tempo_Fuerte + tempo_SD + tempo_Bb;
+        listaPersonas.remove(0);
+        //System.out.println(listaPersonas.get(0));
     }
+
+    /*int tempo_SD = 0;
+    public void get_tiempoSidoD(){
+        nombres = new ArrayList<String>();
+        for (int i=0; i<listaPersonas.get(0).pedido_SideD.size(); i++){
+            precioTotalPedido += Integer.parseInt( listaPersonas.get(0).pedido_SideD.get(i).get(1) );
+            tempo_SD += Integer.parseInt( listaPersonas.get(0).pedido_SideD.get(i).get(2) );
+            nombres.add( listaPersonas.get(0).pedido_SideD.get(i).get(0) );
+            System.out.println("El precio es: " + precioTotalPedido + "  El tiempo es: " + tempo_SD);
+        }
+        //listaPersonas.remove(0);
+    } */
+
     public int get_tiempo_produccion(){
-        return tiempo_de_produccion;
+        return tempo_Fuerte;
     }
 
     //esta funcion se debe de llamar 3 veces, para platoFuerte, SideD, bebidas

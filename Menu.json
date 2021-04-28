@@ -1,26 +1,26 @@
 {	
     "PlatoFuerte":[{
 	    "nombre" : "Hamburguesa",
-	    "precio" : "1500",
-	    "duracion" : "5",
+	    "precio" : "1500" ,
+	    "duracion" : "3",
 	    "tamaño" : "entero"
 	  },
 
 	  { "nombre" : "ArrozConCamarones",
-	    "precio" : "3000",
-	    "duracion" : "5",
+	    "precio" : "3000" ,
+	    "duracion" : "2",
 	    "tamaño" : "entero"
 	  },
 
 	  { "nombre" : "ArrozConPollo",
-	    "precio" : "2500",
-	    "duracion" : "5",
+	    "precio" : "2500" ,
+	    "duracion" : "2",
 	    "tamaño" : "entero"
 	  },
 
 	  { "nombre" : "FileteDePescado",
 	    "precio" : "2700" ,
-	    "duracion" : "5",
+	    "duracion" : "1",
 	    "tamaño" : "medio"
         }
     ],
@@ -28,28 +28,28 @@
 	"Acompañamiento" : [{
 		"nombre" : "Ensalada",
 		"precio" : "1000" ,
-	    "duracion" : "5",
+	    "duracion" : "1",
 		"tipo" : "salado"
 	  },
 	  	
 	  {
 		"nombre" : "Patacones",
 		"precio" : "2000" ,
-	    "duracion" : "5",
+	    "duracion" : "2",
 		"tipo" : "salado"
 	  },
 
 	  {
 		"nombre" : "PapasFritas",
-		"precio" : "2200",
-	    "duracion" : "5",
+		"precio" : "2200" ,
+	    "duracion" : "1",
 		"tipo" : "salado"
 	  },
 
 	  {
 		"nombre" : "Pure",
-		"precio" : "1700",
-	    "duracion" : "5",
+		"precio" : "1700" ,
+	    "duracion" : "2",
 		"tipo" : "dulce"
 	  }
 	],
@@ -58,31 +58,31 @@
 	  {
 		"nombre" : "Coca",
 		"precio" : "600" ,
-	    "duracion" : "5",
+	    "duracion" : "3",
 		"tipo" : "frio",
 		"tamaño" : "2ooml"	
 	  },
 
 	  {
 		"nombre" : "Fanta",
-		"precio" : "1200",
-	    "duracion" : "5",
+		"precio" : "1200" ,
+	    "duracion" : "1",
 		"tipo" : "frio",
 		"tamaño" : "250ml"	
 	  },
 
 	  {
 		"nombre" : "cafe",
-		"precio" : "1000",
-	    "duracion" : "5",
+		"precio" : "1000" ,
+	    "duracion" : "3",
 		"tipo" : "caliente",
 		"tamaño" : "250ml"	
 	  },
 
 	  {
 		"nombre" : "Chocolate",
-		"precio" : "1500",
-	    "duracion" : "5",
+		"precio" : "1500" ,
+	    "duracion" : "2",
 		"tipo" : "caliente",
 		"tamaño" : "330ml"	
 	  }

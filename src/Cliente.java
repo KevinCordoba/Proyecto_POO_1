@@ -5,6 +5,8 @@ import java.util.Random;
 public class Cliente extends Reader{
     public int contador;
     public boolean impaciente;
+    //public int paciencia;
+
     public List<ArrayList<String>> pedido_cliente = new ArrayList<ArrayList<String>>();
 
     public List<ArrayList<String>> pedido_Fuerte = new ArrayList<ArrayList<String>>();
@@ -29,6 +31,7 @@ public class Cliente extends Reader{
     public Cliente(){
         contador = 0;
         impaciente = false;
+        //paciencia = 100;
 
     }
 
@@ -36,7 +39,7 @@ public class Cliente extends Reader{
         Random r = new Random();
         int numero_random;
         numero_random = r.nextInt((3-1)+1)+1;
-        System.out.println("numero Random para platos Fuertes" + numero_random);
+        //System.out.println("numero Random para platos Fuertes" + numero_random);
         while (numero_random != 0){
             if (numero_random == 3){
                 platoFuerte1 = platosFs.indice_fuerte();
@@ -74,7 +77,7 @@ public class Cliente extends Reader{
             }
         }
         numero_random = r.nextInt((3-1)+1)+1;
-        System.out.println("numero Random para acompannamientos" + numero_random);
+        //System.out.println("numero Random para acompannamientos" + numero_random);
         while (numero_random != 0) {
             if (numero_random == 3) {
                 sideD1 = acompans.indice_sideD();
@@ -112,7 +115,7 @@ public class Cliente extends Reader{
             }
         }
         numero_random = r.nextInt((3-1)+1)+1;
-        System.out.println("numero Random para bebidas" + numero_random);
+        //System.out.println("numero Random para bebidas" + numero_random);
         while (numero_random != 0) {
             if (numero_random == 3) {
                 bebida1 = bebs.indice_bebida();
